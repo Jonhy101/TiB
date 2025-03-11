@@ -1,0 +1,9 @@
+graphics\Panel.class
+main\tib\App.class
+logic\Events.class
+graphics\Colors.class
+graphics\StageModal.class
+main\tib\SystemInfo.class
+module-info.class
+logic\ControladorEventos.class
+graphics\MainScene.class

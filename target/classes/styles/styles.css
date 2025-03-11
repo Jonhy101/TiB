@@ -1,0 +1,156 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21/02/2025, 12:30:33 p. m.
+    Author     : anfibio
+*/
+
+.root{
+    -background-color: #4d4c4d;     /*Fondo del panel*/
+    -background-b-color: #303030;   /*Fondo del contenerdor de menus*/
+    -primary-color: #7A787A;        /*Fondo de los controles sin hover*/
+    -bar-color: #5c5a5c;            /*Color de fondo de la barra de menu*/
+    -hover-color: #A3A1A3;          /*Color de los controles con hover*/      
+}
+
+.menu-bar{
+    -fx-background-color: -background-b-color;
+    -fx-spacing: 0;
+    -fx-padding: 0;
+}
+
+/* Estilos para el MenuButton */
+.menu-button {
+    -fx-font-size: 14px;
+    -fx-background-color: -primary-color; /* Fondo azul */
+    -fx-border-color: black;
+    /*-fx-text-fill: red !important;  Texto blanco, aquí  no funciona, aplicar .menu-button> .label como en el siguiente bloque */
+    /*-fx-font-weight: bold;  Texto en negrita */
+    /*-fx-padding: 5px 10px;  Espaciado interno */
+    /*-fx-border-radius: 5px;*/
+    /*-fx-background-radius: 5px;*/
+}
+
+.menu-button> .label{
+    -fx-text-fill: white;
+}
+/* Cambiar color cuando el mouse pasa sobre el MenuButton */
+.menu-button:hover {
+    -fx-background-color: -hover-color;
+}
+
+/*Cambiar color de un botón del menú cuando mientras se hace clic*/
+.menu-button:pressed{
+    -fx-background-color: -background-color;
+}
+
+
+/* Cambiar color de la flecha*/
+.menu-button .arrow{
+    -fx-background-color: white;
+}
+/* Estilos para el popup del MenuButton (contenedor de los MenuItems) */
+.context-menu {
+    -fx-background-color: -background-b-color; /* Color de fondo del recuadro */
+    -fx-border-color: black; /* Color del borde */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Estilos para los MenuItem */
+.menu-item {
+    -fx-background-color: -primary-color; /* Fondo azul claro */
+    -fx-text-fill: white; /* Texto blanco */
+    /*-fx-padding: 8px 15px;  Espaciado interno */
+}
+
+.menu-item> .label{
+    -fx-text-fill: white;
+    /*-fx-font-weight:bold;*/
+}
+/* Cambiar color cuando el mouse pasa sobre un MenuItem */
+.menu-item:hover {
+    -fx-background-color: -hover-color; 
+}
+
+.menu-item:pressed{
+    -fx-background-color: -background-color;
+}
+
+
+/************estilos para el combox************/
+/* Estilo del ComboBox */
+.combo-box {    
+    -fx-background-color: -background-b-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.combo-box .arrow{
+    -fx-background-color: white;
+}
+/* Estilo de los elementos de la lista */
+.combo-box .list-cell {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+    -fx-font-style: italic;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: -hover-color;
+}
+
+/*Color del elemento de lista mientra se hace clic sobre el*/
+.combo-box .list-cell:pressed{
+    -fx-background-color: -background-color;
+}
+
+/* Personalización del Scroll */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+/* Fondo del track (donde se mueve el scroll) */
+.scroll-bar .track {
+    -fx-background-color: -bar-color; /* Color oscuro */
+}
+
+/* Color del thumb (barra deslizante) */
+.scroll-bar .thumb {
+    -fx-background-color: -primary-color; /* Azul */
+    -fx-background-radius: 5px;
+}
+
+/* Color del thumb cuando se pasa el mouse sobre él */
+.scroll-bar .thumb:hover {
+    -fx-background-color: -hover-color; /* Azul más oscuro */
+}
+
+/* Botones arriba/abajo del scrollbar */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: white;
+    /*-fx-shape: "M 0 0 L 7 7 L 14 0 Z";  Flecha */
+}
+
+/* Botones cuando se pasa el mouse */
+.scroll-bar .increment-button:hover,
+.scroll-bar .decrement-button:hover {
+    -fx-background-color: -hover-color;
+}
+
+/* Colores de las flechas*/
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-background-color: -background-color;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 3;
+}
+
