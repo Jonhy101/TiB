@@ -4,6 +4,7 @@ logic\Events.class
 graphics\Colors.class
 graphics\StageModal.class
 main\tib\SystemInfo.class
+main\tib\EntryPoint.class
 module-info.class
 logic\ControladorEventos.class
 graphics\MainScene.class
