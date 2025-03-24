@@ -1,5 +1,8 @@
 /*Este app sirve para la conversión de unidades de información entre los sistemas
 de unidades en base decimal y con base binaria.
+Se desarrolla con el fin de ser una herramienta para el mantenimiento de equipos,
+al momento de asignar memoria para alguna partición se calcula exactamente el 
+espacio que se desea asignar.
 */ 
 
 package main.tib;

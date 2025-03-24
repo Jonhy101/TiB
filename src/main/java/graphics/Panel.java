@@ -19,6 +19,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.scene.control.TextFormatter;
+import javafx.scene.control.Tooltip;
 import logic.ControladorEventos;
 
 /**
@@ -41,13 +42,13 @@ public class Panel {
         Label textConv=new Label("Convertir:");
         leftContainer.getChildren().add(textConv);       
         
-        //Text Field para recibir la entrada
+        //Text Field para recibir la entrada->valor que se desea convertir
         HBox containerDates=new HBox();
         TextField textFieldValor= new TextField();
         //Filtro para admitir sólo números positivos
         TextFormatter<Double> textFormatter = new TextFormatter<>(new DoubleStringConverter(), 0.0, change -> {
             String newText = change.getControlNewText();
-            if (newText.matches("([0-9]*[.])?[0-9]*")) {
+            if (newText.matches("([0-9]*[.])?[0-9]*?([eE][0-9]+)?")) {
                 return change;
             }
             return null;
@@ -91,6 +92,7 @@ public class Panel {
         
         /**********Botón Copiar****************/
         Button btnCopy= creaBotonIcono("/images/clipboard.png", "");
+        btnCopy.setTooltip(new Tooltip("Copiar resultado al portapapeles"));
         
         //Agregar controles al buttonsContainer
         HBox buttonsContainer=new HBox();

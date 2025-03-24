@@ -26,7 +26,7 @@ public class StageModal {
         VBox root=creaVbox();
         
         //Imagen del logo principal
-        ImageView imgLogo=creaImageView("/images/logo512.png", 50, 50);        
+        ImageView imgLogo=creaImageView("/images/logo50.png", 50, 50);           
         root.getChildren().add(imgLogo);
         
         //TextArea con información relevante
@@ -67,7 +67,7 @@ public class StageModal {
         VBox root=creaVbox();
         
         //Imagen del logo principal
-        ImageView imgLogo=creaImageView("/images/logo512.png", 150, 150);      
+        ImageView imgLogo=creaImageView("/images/logo150.png", 150, 150);         
         root.getChildren().add(imgLogo);
         
         //Labels con el título y su traducción

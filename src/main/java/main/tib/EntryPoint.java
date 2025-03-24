@@ -7,6 +7,9 @@ package main.tib;
 /**
  *
  * @author THR-1
+ * Esta clase se utiliza para la generación del ejecutable .exe con los comandos
+ * de javapackage, de esta forma se logra que al generarse se reconozcan los
+ * elementos de JavaFX
  */
 public class EntryPoint {
      public static void main(String[] args) {

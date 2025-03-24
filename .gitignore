@@ -1,0 +1,5 @@
+# Archivos ignorados
+TiBConverter-1.0.exe
+
+# Carpetas ignoradas
+target/

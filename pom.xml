@@ -31,7 +31,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>main.tib.App</mainClass>
+                    <mainClass>main.tib.EntryPoint</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -73,6 +73,7 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--Con este plugin se genera el ejecutable con dependencias-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
